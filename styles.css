@@ -80,16 +80,10 @@
     grid-row: 3;
 }
 
-.hidden {
-    display: none;
+#zero, #clear, #equals {
+    grid-row: 4;
 }
 
-#divide {
-    grid-column: 4;
-    grid-row: 4;
-}
- 
-#zero {
-    grid-column: 1;
-    grid-row: 4;
+.hidden {
+    display: none;
 }
