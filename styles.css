@@ -1,0 +1,90 @@
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+    --col1: #D9C5B4;
+    --col2: #735151;
+    --col3: #D9A3A3;
+    --col4: #4D7368;
+}
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+ }
+
+.screen{
+    border: solid 2px var(--col2);
+   width: 90%;
+    height: 200px;
+    display: flex;
+    justify-self: center;
+    margin: 40px 0;
+    justify-content: end;
+    background-color: var(--col1);
+    border-radius: 10px;
+    box-shadow: -2px -2px 0 var(--col2);
+}
+.calculator{
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 2px var(--col2);
+    margin: 0 auto;
+    justify-content: center;
+    background-color: var(--col4);
+    border-radius: 30px;
+   margin: 40px 0 0 0;
+    justify-self: center;
+    
+}
+.btn {
+    padding: 5px;
+    margin: 10px ;
+    border-radius: 20%;
+    font-size: 1.7rem;
+    background-color: var(--col3);
+    box-shadow: 3px 6px 3px var(--col2);
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+
+.screenDigits {
+    font-size: 6rem;
+    display: flex; 
+    padding: 20px;
+}   
+
+#seven, #eight, #nine {
+ grid-row: 1;
+}
+
+#four, #five, #six {
+    grid-row: 2;
+}
+
+#one, #two, #three {
+    grid-row: 3;
+}
+
+.hidden {
+    display: none;
+}
+
+#divide {
+    grid-column: 4;
+    grid-row: 4;
+}
