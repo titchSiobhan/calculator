@@ -124,12 +124,12 @@ if (justCalculated){
 }
 
  if(!isSecondNumber){
-        if(firstNumber.length >= 10){
+        if(firstNumber.length >= 8){
             return
         }
         firstNumber += clickedValue
     } else {
-        if(secondNumber.length >= 10){
+        if(secondNumber.length >= 8){
             return
         }
         secondNumber += clickedValue
@@ -189,8 +189,8 @@ function calculate() {
     }
 
     result = result.toString();
-if (result.length >= 12) {
-  result = result.slice(0, 12) + '...';
+if (result.length >= 8) {
+  result = result.slice(0, 8) + '...';
 }
 
 
